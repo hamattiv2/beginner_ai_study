@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    image: continuumio/anaconda3:2019.03
+    ports:
+      - 8888:8888
+    volumes:
+      - ./workdir:/workdir/
+    tty: true
+    stdin_open: true
